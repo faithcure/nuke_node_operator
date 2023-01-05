@@ -32,10 +32,10 @@ EXPRESSIONS AND GENERAL INFO TAB
 - See performance profiling features such as processor and ram to use.
 - Performance timers features. 
 
-... and more to be published very soon.
-I will also consider any requests you want to add.
-Thank you for your interest.
-This script will you make your job little bit easer. 
+
+<br>I will also consider any requests you want to add.
+<br>Thank you for your interest.
+<br>This script will you make your job little bit easer. 
 
 HOW TO INSTALL
 ---
