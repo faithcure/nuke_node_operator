@@ -1,4 +1,4 @@
-# Node(s) Operator (Spread Sheet) for NUKE BETA*
+# Node(s) Operator (Spread Sheet) for Nuke, *BETA*
 ___
 
 ### Node Operator [Spread Sheet] Specifications:
