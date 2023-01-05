@@ -3,35 +3,34 @@ ___
 
 ### Node Operator [Spread Sheet] Specifications:
 
-
 NODE SETTINGS TAB
-1. Change the values of all or selected Nodes knobs at once.
-2. Set labels and colors of all or selected Nodes at once.
-3. Listing the selected Nodes in order and making the desired settings in the table.
-4. Ability to quickly reach the Node(s) sought in a corrupted or complex flow.
-5. Simple Node search/filter feature.
+Change the values of all or selected Nodes knobs at once.
+Set labels and colors of all or selected Nodes at once.
+Listing the selected Nodes in order and making the desired settings in the table.
+Ability to quickly reach the Node(s) sought in a corrupted or complex flow.
+Simple Node search/filter feature.
 
 ----
 READ NODE TAB
-6. Changing settings specific to Read Nodes only.
-7. Ability to change the values of all or selected Read Nodes at once.
-8. The ability to see the metadata of sequences or encodes (Resolution, Size, Created Date-Time, ifLocalized, extension, etc.) and explore.
-9. Check Warning of the all Nodes. [Dir Check]
+Changing settings specific to Read Nodes only.
+Ability to change the values of all or selected Read Nodes at once.
+The ability to see the metadata of sequences or encodes (Resolution, Size, Created Date-Time, ifLocalized, extension, etc.) and explore.
+Check Warning of the all Nodes. [Dir Check]
 
 ----
 WRITE NODE TAB
-10. Comprehensive Write node creation capability.
-11. Creating a write node suitable for the set project or your own pipeline.
-12. Ability to create write nodes for Mattes.
-13. Personal write node creation feature.
-14. Ability to navigate to the selected Write node directory.
+Comprehensive Write node creation capability.
+Creating a write node suitable for the set project or your own pipeline.
+Ability to create write nodes for Mattes.
+Personal write node creation feature.
+Ability to navigate to the selected Write node directory.
 
 -----
 EXPRESSIONS AND GENERAL INFO TAB
-15. Ready to use animation expressions. [TCL Expressions]
-16. Displaying features such as node count, read-write number indicator, project path, project name etc...
-17. See performance profiling features such as processor and ram to use.
-18. Performance timers features. 
+Ready to use animation expressions. [TCL Expressions]
+Displaying features such as node count, read-write number indicator, project path, project name etc...
+See performance profiling features such as processor and ram to use.
+Performance timers features. 
 
 ... and more to be published very soon.
 I will also consider any requests you want to add.
