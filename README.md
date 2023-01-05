@@ -4,9 +4,9 @@ ___
 ### Node Operator [Spread Sheet] Specifications:
 
 NODE SETTINGS TAB
-Change the values of all or selected Nodes knobs at once.
-Set labels and colors of all or selected Nodes at once.
-Listing the selected Nodes in order and making the desired settings in the table.
+-Change the values of all or selected Nodes knobs at once.
+-Set labels and colors of all or selected Nodes at once.
+-Listing the selected Nodes in order and making the desired settings in the table.
 Ability to quickly reach the Node(s) sought in a corrupted or complex flow.
 Simple Node search/filter feature.
 
