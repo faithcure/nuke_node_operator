@@ -1,5 +1,7 @@
 # Node(s) Operator (Spread Sheet) for Nuke, *BETA*
 ___
+### What does script to do:
+This python script allows you to quickly edit your node graph and set up your nodes (and node flow) at once. You can create with your own project settings or specific setting write nodes, matte nodes regularly. Also this script has came with most using expression TCL for animations, text etc. If you want to use them just click it and avoid lost your time! 
 
 ### Node Operator [Spread Sheet] Specifications:
 
