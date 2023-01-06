@@ -2,7 +2,7 @@
 ___
 ### What does script to do:
 This python script allows you to quickly edit your node graph and set up your nodes (and node flow) at once.  If you want to use them just click it and avoid lost your time! 
-In short, avoid lost your time and work regularly.
+<br>In short, avoid lost your time and work regularly.
 
 ### Node Operator [Spread Sheet] Specifications:
 
