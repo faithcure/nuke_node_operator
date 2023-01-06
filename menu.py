@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import nuke
 import node_operator_main_v01
 import importlib
