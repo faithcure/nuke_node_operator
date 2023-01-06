@@ -4,7 +4,7 @@ import importlib
 
 
 toolbar = nuke.menu("Nodes")
-i = toolbar.addMenu("Studio", icon='STUDIO.png')
+i = toolbar.addMenu("Studio")
 
 # development node operator
 def start_NOP():
