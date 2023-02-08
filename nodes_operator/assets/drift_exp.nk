@@ -1,0 +1,152 @@
+set cut_paste_input [stack 0]
+version 13.1 v3
+BackdropNode {
+ inputs 0
+ name BackdropNode11
+ tile_color 0x8e8e3800
+ label Drift
+ note_font_size 42
+ selected true
+ xpos 213
+ ypos -361
+ bdwidth 333
+ bdheight 315
+}
+Constant {
+ inputs 0
+ channels rgb
+ name Constant10
+ selected true
+ xpos 408
+ ypos -242
+}
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard1
+ selected true
+ xpos 298
+ ypos -306
+}
+Transform {
+ scale 0.2
+ center {1024 778}
+ name Transform11
+ selected true
+ xpos 298
+ ypos -234
+}
+Roto {
+ output alpha
+ premultiply rgb
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097664}
+    {t x44800000 x44428000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Ellipse1 512 bezier
+     {{cc
+       {f 8192}
+       {px 1
+        {xc1cfcfc0 0}
+        {x44800000 x44365768}
+        {x41cfcf40 0}
+        {0 xc1cfcf80}
+        {x4485e117 x44421998}
+        {0 x41cfcf60}
+        {x41cfcf40 0}
+        {x44800000 x444ddbca}
+        {xc1cfcfc0 0}
+        {0 x41cfcf60}
+        {x44743dce x44421998}
+        {0 xc1cfcf80}}}     idem}
+     {tx 1 x44448000 x44580000}
+     {a osw x41200000 osf 0 str 1 spx x44800000 spy x44428000 sb 1 tt x40e00000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 tt 5 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 tt 6 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 tt 7 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1024 778}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ motionblur_shutter_offset_type centred
+ source_black_outside true
+ name Roto10
+ selected true
+ xpos 298
+ ypos -208
+}
+Transform {
+ translate {{sin(frame/10)*500} 1}
+ rotate {{sin(frame/5)*100}}
+ scale 1.95
+ center {1024 778}
+ motionblur 40
+ shutter 0.7
+ shutteroffset centred
+ name Transform10
+ selected true
+ xpos 298
+ ypos -170
+}
+Merge2 {
+ inputs 2
+ name Merge10
+ selected true
+ xpos 408
+ ypos -170
+}
+Crop {
+ preset square
+ box {246 0 1802 1556}
+ reformat true
+ crop false
+ name Crop2
+ selected true
+ xpos 408
+ ypos -144
+}
+Write {
+ file C:/Users/User/Desktop/expressions/drift.mov
+ colorspace sRGB
+ file_type mov
+ mov64_format "mov (QuickTime / MOV)"
+ mov64_codec h264
+ mov_h264_codec_profile "High 4:2:0 8-bit"
+ mov64_pixel_format {{0} "yuv420p\tYCbCr 4:2:0 8-bit"}
+ mov64_quality Custom
+ mov64_fast_start true
+ mov64_write_timecode true
+ mov64_gop_size 12
+ mov64_b_frames 0
+ mov64_bitrate 28000
+ mov64_bitrate_tolerance 0
+ mov64_quality_min 1
+ mov64_quality_max 3
+ render_order 8
+ checkHashOnRead false
+ version 1
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ name Write10
+ selected true
+ xpos 408
+ ypos -118
+}
