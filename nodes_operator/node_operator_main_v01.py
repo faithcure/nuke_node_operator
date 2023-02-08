@@ -35,7 +35,7 @@ class nodes_operator(QWidget, Ui_Form):
         self.make_italic.setEnabled(0)
         self.make_bold.setEnabled(0)
         self.font_label.setEnabled(0)
-        
+
         # Read node settings
         read_node_tab.nodes_operator_read_node_tab.localization_policy(self, "localizationPolicy")
         read_node_tab.nodes_operator_read_node_tab.update_node(self, "updateLocalization")
@@ -56,6 +56,10 @@ class nodes_operator(QWidget, Ui_Form):
 
         # Expressions -Text end -Knob values
         ready_expressions.ready_to_expressions.tab_widgets(self)
+        ready_expressions.ready_to_expressions.text_expressions(self)
+        ready_expressions.ready_to_expressions.if_result_empty(self)
+        ready_expressions.ready_to_expressions.create_nodes(self)
+        ready_expressions.ready_to_expressions.animation_expression(self)
 
         # general info
         general_info.general_infos.get_node_count(self)

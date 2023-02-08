@@ -31,6 +31,7 @@ class write_settings_tab(QWidget, Ui_Form):
         if nuke.root()[name].value() == "":
             self.current_locatipn_label.setText("Not matching script name, please save this script.")
             self.current_locatipn_label.setStyleSheet("background-color: red")
+            self.default_btn.setEnabled(False)
         else:
             self.script_name = "".join(nuke.root()[name].value().split("/").pop().split(".")[:1])
             self.current_locatipn_label.setText(self.script_name)
@@ -51,6 +52,7 @@ class write_settings_tab(QWidget, Ui_Form):
         if nuke.root()[Directory].value() == "":
             self.last_path_label.setText("There is no directory of the project. Please set directory or input specific path.")
             self.last_path_label.setStyleSheet("background-color: red")
+            self.create_write_node_btn.setEnabled(False)
         else:
             self.script_directory = "/".join(nuke.root()[Directory].value().split("/"))
             self.for_short_name = self.script_directory + "/Comp/" + "Inputs/" + "Proxy_Render/"
@@ -94,7 +96,7 @@ class write_settings_tab(QWidget, Ui_Form):
                 self.suffix_line_edit.clear()
                 self.last_path_label.setText( "../" + self.short_dir_path )
         self.is_denoise.stateChanged.connect(if_denoie_checked)
-        
+
         def if_suffix_changed():
             if self.suffix_line_edit.text() == "":
                  self.label_13.setText(self.script_name + Digits + self.type)
@@ -132,7 +134,10 @@ class write_settings_tab(QWidget, Ui_Form):
         self.write_node_name_check.stateChanged.connect(new_name_check)
 
         def create_write():
-            self.last_selection_path = self.for_short_name +  self.label_13.text()
+            if self.set_subdir_name_lbl:
+                self.last_selection_path = self.for_short_name + self.set_subdir_name_lbl.text() + "/" + self.label_13.text()
+            else:
+                self.last_selection_path = self.for_short_name +  self.label_13.text()
             self.selected_path = self.location_line_edit.text() + self.label_13.text()
             self.wNode = nuke.createNode("Write")
             if not self.location_line_edit.text():
@@ -155,10 +160,16 @@ class write_settings_tab(QWidget, Ui_Form):
                     nuke.message("Please enter node a node name.")
             else:
                 self.wNode[name].setValue(Node_name  + "_" + str(nonde_inst))
+            
 
         self.create_write_node_btn.clicked.connect(create_write)
             
         def create_matte_node():
+            if self.set_subdir_name_lbl:
+                self.last_selection_path = self.for_short_name + self.script_name + self.set_subdir_name_lbl.text() + "/" + Digits + self.type
+            else:
+                self.last_selection_path = self.for_short_name + self.script_name + Digits + self.type
+           
             self.last_selection_path = self.for_short_name + self.script_name + Digits + self.type
             self.selected_path = self.location_line_edit.text() + self.script_name + Digits + self.type
             matte_node = nuke.createNode("Write")
@@ -172,7 +183,6 @@ class write_settings_tab(QWidget, Ui_Form):
                 matte_node["file"].setValue(self.last_selection_path.replace(Proxy, "Matte"))
             else:
                 matte_node["file"].setValue(self.selected_path.replace(Proxy, "Matte"))
-     
             matte_node["tile_color"].setValue(4294967295)
             matte_node["channels"].setValue("alpha")
             matte_node["file_type"].setValue("exr")

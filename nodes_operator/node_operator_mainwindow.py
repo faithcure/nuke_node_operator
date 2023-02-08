@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Node operator for Nuke 11+
+## Form generated from reading UI file 'node_operator_dockablesmVbVn.ui'
 ##
-## Created by: Fatih ünal
+## Created by: Qt User Interface Compiler version 5.15.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -18,11 +18,12 @@ class Ui_Form(object):
         if not Form.objectName():
             Form.setObjectName(u"Form")
         Form.setEnabled(True)
-        Form.resize(548, 847)
+        Form.resize(548, 747)
         self.verticalLayout_2 = QVBoxLayout(Form)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.tabWidget = QTabWidget(Form)
         self.tabWidget.setObjectName(u"tabWidget")
+        self.tabWidget.setAutoFillBackground(True)
         self.tabWidget.setTabPosition(QTabWidget.North)
         self.tabWidget.setTabShape(QTabWidget.Rounded)
         self.tab = QWidget()
@@ -515,15 +516,9 @@ class Ui_Form(object):
         self.tab_4.setObjectName(u"tab_4")
         self.verticalLayout_8 = QVBoxLayout(self.tab_4)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
-        self.groupBox_4 = QGroupBox(self.tab_4)
-        self.groupBox_4.setObjectName(u"groupBox_4")
-        self.groupBox_4.setFlat(True)
-        self.verticalLayout_19 = QVBoxLayout(self.groupBox_4)
-        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
-        self.verticalLayout_19.setContentsMargins(0, 9, 0, 0)
         self.mainLayout = QVBoxLayout()
         self.mainLayout.setObjectName(u"mainLayout")
-        self.prxy_render_options_grp = QGroupBox(self.groupBox_4)
+        self.prxy_render_options_grp = QGroupBox(self.tab_4)
         self.prxy_render_options_grp.setObjectName(u"prxy_render_options_grp")
         self.prxy_render_options_grp.setFlat(True)
         self.verticalLayout_9 = QVBoxLayout(self.prxy_render_options_grp)
@@ -572,6 +567,7 @@ class Ui_Form(object):
         self.file_type_combo.addItem("")
         self.file_type_combo.addItem("")
         self.file_type_combo.addItem("")
+        self.file_type_combo.addItem("")
         self.file_type_combo.setObjectName(u"file_type_combo")
         self.file_type_combo.setMinimumSize(QSize(100, 0))
 
@@ -580,14 +576,10 @@ class Ui_Form(object):
 
         self.verticalLayout_13.addLayout(self.horizontalLayout_15)
 
-        self.horizontalLayout_16 = QHBoxLayout()
-        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
-        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.label_72 = QLabel(self.prxy_render_options_grp)
+        self.label_72.setObjectName(u"label_72")
 
-        self.horizontalLayout_16.addItem(self.horizontalSpacer_2)
-
-
-        self.verticalLayout_13.addLayout(self.horizontalLayout_16)
+        self.verticalLayout_13.addWidget(self.label_72)
 
 
         self.horizontalLayout_12.addLayout(self.verticalLayout_13)
@@ -598,7 +590,7 @@ class Ui_Form(object):
 
         self.mainLayout.addWidget(self.prxy_render_options_grp)
 
-        self.locate_grp_bx = QGroupBox(self.groupBox_4)
+        self.locate_grp_bx = QGroupBox(self.tab_4)
         self.locate_grp_bx.setObjectName(u"locate_grp_bx")
         self.locate_grp_bx.setFlat(False)
         self.locate_grp_bx.setCheckable(False)
@@ -628,6 +620,28 @@ class Ui_Form(object):
 
 
         self.verticalLayout_14.addLayout(self.verticalLayout_15)
+
+        self.line_20 = QFrame(self.locate_grp_bx)
+        self.line_20.setObjectName(u"line_20")
+        self.line_20.setFrameShape(QFrame.HLine)
+        self.line_20.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_14.addWidget(self.line_20)
+
+        self.horizontalLayout_7 = QHBoxLayout()
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.label_71 = QLabel(self.locate_grp_bx)
+        self.label_71.setObjectName(u"label_71")
+
+        self.horizontalLayout_7.addWidget(self.label_71)
+
+        self.set_subdir_name_lbl = QLineEdit(self.locate_grp_bx)
+        self.set_subdir_name_lbl.setObjectName(u"set_subdir_name_lbl")
+
+        self.horizontalLayout_7.addWidget(self.set_subdir_name_lbl)
+
+
+        self.verticalLayout_14.addLayout(self.horizontalLayout_7)
 
         self.verticalLayout_16 = QVBoxLayout()
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
@@ -747,8 +761,6 @@ class Ui_Form(object):
 
         self.verticalLayout_18.addWidget(self.line_9)
 
-        self.horizontalLayout_25 = QHBoxLayout()
-        self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
         self.horizontalLayout_26 = QHBoxLayout()
         self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
         self.label_21 = QLabel(self.groupBox_2)
@@ -763,13 +775,17 @@ class Ui_Form(object):
         self.horizontalLayout_26.addWidget(self.last_path_label)
 
 
-        self.horizontalLayout_25.addLayout(self.horizontalLayout_26)
-
-
-        self.verticalLayout_18.addLayout(self.horizontalLayout_25)
+        self.verticalLayout_18.addLayout(self.horizontalLayout_26)
 
 
         self.verticalLayout_17.addLayout(self.verticalLayout_18)
+
+        self.line_24 = QFrame(self.groupBox_2)
+        self.line_24.setObjectName(u"line_24")
+        self.line_24.setFrameShape(QFrame.HLine)
+        self.line_24.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_17.addWidget(self.line_24)
 
 
         self.verticalLayout_16.addWidget(self.groupBox_2)
@@ -781,74 +797,80 @@ class Ui_Form(object):
         self.mainLayout.addWidget(self.locate_grp_bx)
 
 
-        self.verticalLayout_19.addLayout(self.mainLayout)
+        self.verticalLayout_8.addLayout(self.mainLayout)
 
         self.horizontalLayout_24 = QHBoxLayout()
         self.horizontalLayout_24.setObjectName(u"horizontalLayout_24")
-        self.write_node_name_check = QCheckBox(self.groupBox_4)
+        self.write_node_name_check = QCheckBox(self.tab_4)
         self.write_node_name_check.setObjectName(u"write_node_name_check")
 
         self.horizontalLayout_24.addWidget(self.write_node_name_check)
 
-        self.write_node_name = QLineEdit(self.groupBox_4)
+        self.write_node_name = QLineEdit(self.tab_4)
         self.write_node_name.setObjectName(u"write_node_name")
 
         self.horizontalLayout_24.addWidget(self.write_node_name)
 
 
-        self.verticalLayout_19.addLayout(self.horizontalLayout_24)
-
-        self.line_8 = QFrame(self.groupBox_4)
-        self.line_8.setObjectName(u"line_8")
-        self.line_8.setFrameShape(QFrame.HLine)
-        self.line_8.setFrameShadow(QFrame.Sunken)
-
-        self.verticalLayout_19.addWidget(self.line_8)
+        self.verticalLayout_8.addLayout(self.horizontalLayout_24)
 
         self.horizontalLayout_23 = QHBoxLayout()
         self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
-        self.default_btn = QPushButton(self.groupBox_4)
+        self.default_btn = QPushButton(self.tab_4)
         self.default_btn.setObjectName(u"default_btn")
 
         self.horizontalLayout_23.addWidget(self.default_btn)
 
-        self.get_folder_btn = QPushButton(self.groupBox_4)
-        self.get_folder_btn.setObjectName(u"get_folder_btn")
-
-        self.horizontalLayout_23.addWidget(self.get_folder_btn)
-
-        self.create_write_node_btn = QPushButton(self.groupBox_4)
+        self.create_write_node_btn = QPushButton(self.tab_4)
         self.create_write_node_btn.setObjectName(u"create_write_node_btn")
 
         self.horizontalLayout_23.addWidget(self.create_write_node_btn)
 
 
-        self.verticalLayout_19.addLayout(self.horizontalLayout_23)
+        self.verticalLayout_8.addLayout(self.horizontalLayout_23)
+
+        self.line_23 = QFrame(self.tab_4)
+        self.line_23.setObjectName(u"line_23")
+        self.line_23.setFrameShape(QFrame.HLine)
+        self.line_23.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_8.addWidget(self.line_23)
+
+        self.label_80 = QLabel(self.tab_4)
+        self.label_80.setObjectName(u"label_80")
+
+        self.verticalLayout_8.addWidget(self.label_80)
+
+        self.label_81 = QLabel(self.tab_4)
+        self.label_81.setObjectName(u"label_81")
+
+        self.verticalLayout_8.addWidget(self.label_81)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
-        self.verticalLayout_19.addItem(self.verticalSpacer)
-
-
-        self.verticalLayout_8.addWidget(self.groupBox_4)
+        self.verticalLayout_8.addItem(self.verticalSpacer)
 
         self.tabWidget.addTab(self.tab_4, "")
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
         self.verticalLayout_20 = QVBoxLayout(self.tab_2)
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
-        self.toolBox_2 = QToolBox(self.tab_2)
-        self.toolBox_2.setObjectName(u"toolBox_2")
-        self.toolBox_2.setAutoFillBackground(True)
-        self.toolBox_2.setFrameShape(QFrame.NoFrame)
-        self.toolBox_2.setFrameShadow(QFrame.Plain)
-        self.toolBox_2.setLineWidth(0)
-        self.toolBox_2Page1 = QWidget()
-        self.toolBox_2Page1.setObjectName(u"toolBox_2Page1")
-        self.toolBox_2Page1.setGeometry(QRect(0, -329, 489, 1056))
-        self.verticalLayout_21 = QVBoxLayout(self.toolBox_2Page1)
+        self.tabWidget_2 = QTabWidget(self.tab_2)
+        self.tabWidget_2.setObjectName(u"tabWidget_2")
+        self.tabWidget_2.setAutoFillBackground(True)
+        self.tabWidget_2Page1 = QWidget()
+        self.tabWidget_2Page1.setObjectName(u"tabWidget_2Page1")
+        self.verticalLayout_21 = QVBoxLayout(self.tabWidget_2Page1)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
-        self.groupBox_3 = QGroupBox(self.toolBox_2Page1)
+        self.scrollArea = QScrollArea(self.tabWidget_2Page1)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 188, 1056))
+        self.verticalLayout_48 = QVBoxLayout(self.scrollAreaWidgetContents_2)
+        self.verticalLayout_48.setObjectName(u"verticalLayout_48")
+        self.groupBox_3 = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox_3.setObjectName(u"groupBox_3")
         self.horizontalLayout_27 = QHBoxLayout(self.groupBox_3)
         self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
@@ -896,9 +918,9 @@ class Ui_Form(object):
         self.horizontalLayout_27.addWidget(self.randm_img)
 
 
-        self.verticalLayout_21.addWidget(self.groupBox_3)
+        self.verticalLayout_48.addWidget(self.groupBox_3)
 
-        self.groupBox_5 = QGroupBox(self.toolBox_2Page1)
+        self.groupBox_5 = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox_5.setObjectName(u"groupBox_5")
         self.horizontalLayout_28 = QHBoxLayout(self.groupBox_5)
         self.horizontalLayout_28.setObjectName(u"horizontalLayout_28")
@@ -946,9 +968,9 @@ class Ui_Form(object):
         self.horizontalLayout_28.addWidget(self.noise_img)
 
 
-        self.verticalLayout_21.addWidget(self.groupBox_5)
+        self.verticalLayout_48.addWidget(self.groupBox_5)
 
-        self.groupBox_6 = QGroupBox(self.toolBox_2Page1)
+        self.groupBox_6 = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox_6.setObjectName(u"groupBox_6")
         self.horizontalLayout_30 = QHBoxLayout(self.groupBox_6)
         self.horizontalLayout_30.setObjectName(u"horizontalLayout_30")
@@ -996,9 +1018,9 @@ class Ui_Form(object):
         self.horizontalLayout_30.addWidget(self.sinus_img)
 
 
-        self.verticalLayout_21.addWidget(self.groupBox_6)
+        self.verticalLayout_48.addWidget(self.groupBox_6)
 
-        self.groupBox_8 = QGroupBox(self.toolBox_2Page1)
+        self.groupBox_8 = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox_8.setObjectName(u"groupBox_8")
         self.horizontalLayout_32 = QHBoxLayout(self.groupBox_8)
         self.horizontalLayout_32.setObjectName(u"horizontalLayout_32")
@@ -1046,9 +1068,9 @@ class Ui_Form(object):
         self.horizontalLayout_32.addWidget(self.tris_img)
 
 
-        self.verticalLayout_21.addWidget(self.groupBox_8)
+        self.verticalLayout_48.addWidget(self.groupBox_8)
 
-        self.groupBox_9 = QGroupBox(self.toolBox_2Page1)
+        self.groupBox_9 = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox_9.setObjectName(u"groupBox_9")
         self.horizontalLayout_33 = QHBoxLayout(self.groupBox_9)
         self.horizontalLayout_33.setObjectName(u"horizontalLayout_33")
@@ -1096,259 +1118,9 @@ class Ui_Form(object):
         self.horizontalLayout_33.addWidget(self.sqr_img)
 
 
-        self.verticalLayout_21.addWidget(self.groupBox_9)
+        self.verticalLayout_48.addWidget(self.groupBox_9)
 
-        self.groupBox_13 = QGroupBox(self.toolBox_2Page1)
-        self.groupBox_13.setObjectName(u"groupBox_13")
-        self.horizontalLayout_34 = QHBoxLayout(self.groupBox_13)
-        self.horizontalLayout_34.setObjectName(u"horizontalLayout_34")
-        self.verticalLayout_39 = QVBoxLayout()
-        self.verticalLayout_39.setObjectName(u"verticalLayout_39")
-        self.label_32 = QLabel(self.groupBox_13)
-        self.label_32.setObjectName(u"label_32")
-
-        self.verticalLayout_39.addWidget(self.label_32)
-
-        self.label_33 = QLabel(self.groupBox_13)
-        self.label_33.setObjectName(u"label_33")
-
-        self.verticalLayout_39.addWidget(self.label_33)
-
-
-        self.horizontalLayout_34.addLayout(self.verticalLayout_39)
-
-        self.verticalLayout_32 = QVBoxLayout()
-        self.verticalLayout_32.setObjectName(u"verticalLayout_32")
-        self.lineEdit_13 = QLineEdit(self.groupBox_13)
-        self.lineEdit_13.setObjectName(u"lineEdit_13")
-        self.lineEdit_13.setMaximumSize(QSize(320, 16777215))
-        self.lineEdit_13.setDragEnabled(True)
-
-        self.verticalLayout_32.addWidget(self.lineEdit_13)
-
-        self.lineEdit_14 = QLineEdit(self.groupBox_13)
-        self.lineEdit_14.setObjectName(u"lineEdit_14")
-        self.lineEdit_14.setMaximumSize(QSize(200, 16777215))
-        self.lineEdit_14.setDragEnabled(True)
-
-        self.verticalLayout_32.addWidget(self.lineEdit_14)
-
-
-        self.horizontalLayout_34.addLayout(self.verticalLayout_32)
-
-        self.horizontalSpacer_8 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
-
-        self.horizontalLayout_34.addItem(self.horizontalSpacer_8)
-
-        self.saw_right_inner_img = QLabel(self.groupBox_13)
-        self.saw_right_inner_img.setObjectName(u"saw_right_inner_img")
-
-        self.horizontalLayout_34.addWidget(self.saw_right_inner_img)
-
-
-        self.verticalLayout_21.addWidget(self.groupBox_13)
-
-        self.groupBox_10 = QGroupBox(self.toolBox_2Page1)
-        self.groupBox_10.setObjectName(u"groupBox_10")
-        self.horizontalLayout_35 = QHBoxLayout(self.groupBox_10)
-        self.horizontalLayout_35.setObjectName(u"horizontalLayout_35")
-        self.verticalLayout_46 = QVBoxLayout()
-        self.verticalLayout_46.setObjectName(u"verticalLayout_46")
-        self.label_40 = QLabel(self.groupBox_10)
-        self.label_40.setObjectName(u"label_40")
-
-        self.verticalLayout_46.addWidget(self.label_40)
-
-        self.label_41 = QLabel(self.groupBox_10)
-        self.label_41.setObjectName(u"label_41")
-
-        self.verticalLayout_46.addWidget(self.label_41)
-
-
-        self.horizontalLayout_35.addLayout(self.verticalLayout_46)
-
-        self.verticalLayout_33 = QVBoxLayout()
-        self.verticalLayout_33.setObjectName(u"verticalLayout_33")
-        self.lineEdit_15 = QLineEdit(self.groupBox_10)
-        self.lineEdit_15.setObjectName(u"lineEdit_15")
-        self.lineEdit_15.setMaximumSize(QSize(320, 16777215))
-        self.lineEdit_15.setDragEnabled(True)
-
-        self.verticalLayout_33.addWidget(self.lineEdit_15)
-
-        self.lineEdit_16 = QLineEdit(self.groupBox_10)
-        self.lineEdit_16.setObjectName(u"lineEdit_16")
-        self.lineEdit_16.setMaximumSize(QSize(200, 16777215))
-        self.lineEdit_16.setDragEnabled(True)
-
-        self.verticalLayout_33.addWidget(self.lineEdit_16)
-
-
-        self.horizontalLayout_35.addLayout(self.verticalLayout_33)
-
-        self.horizontalSpacer_9 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
-
-        self.horizontalLayout_35.addItem(self.horizontalSpacer_9)
-
-        self.saw_right_img = QLabel(self.groupBox_10)
-        self.saw_right_img.setObjectName(u"saw_right_img")
-
-        self.horizontalLayout_35.addWidget(self.saw_right_img)
-
-
-        self.verticalLayout_21.addWidget(self.groupBox_10)
-
-        self.groupBox_11 = QGroupBox(self.toolBox_2Page1)
-        self.groupBox_11.setObjectName(u"groupBox_11")
-        self.horizontalLayout_36 = QHBoxLayout(self.groupBox_11)
-        self.horizontalLayout_36.setObjectName(u"horizontalLayout_36")
-        self.verticalLayout_47 = QVBoxLayout()
-        self.verticalLayout_47.setObjectName(u"verticalLayout_47")
-        self.label_42 = QLabel(self.groupBox_11)
-        self.label_42.setObjectName(u"label_42")
-
-        self.verticalLayout_47.addWidget(self.label_42)
-
-        self.label_43 = QLabel(self.groupBox_11)
-        self.label_43.setObjectName(u"label_43")
-
-        self.verticalLayout_47.addWidget(self.label_43)
-
-
-        self.horizontalLayout_36.addLayout(self.verticalLayout_47)
-
-        self.verticalLayout_34 = QVBoxLayout()
-        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
-        self.lineEdit_17 = QLineEdit(self.groupBox_11)
-        self.lineEdit_17.setObjectName(u"lineEdit_17")
-        self.lineEdit_17.setMaximumSize(QSize(320, 16777215))
-        self.lineEdit_17.setDragEnabled(True)
-
-        self.verticalLayout_34.addWidget(self.lineEdit_17)
-
-        self.lineEdit_18 = QLineEdit(self.groupBox_11)
-        self.lineEdit_18.setObjectName(u"lineEdit_18")
-        self.lineEdit_18.setMaximumSize(QSize(200, 16777215))
-        self.lineEdit_18.setDragEnabled(True)
-
-        self.verticalLayout_34.addWidget(self.lineEdit_18)
-
-
-        self.horizontalLayout_36.addLayout(self.verticalLayout_34)
-
-        self.horizontalSpacer_10 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
-
-        self.horizontalLayout_36.addItem(self.horizontalSpacer_10)
-
-        self.saw_right_curve_img = QLabel(self.groupBox_11)
-        self.saw_right_curve_img.setObjectName(u"saw_right_curve_img")
-
-        self.horizontalLayout_36.addWidget(self.saw_right_curve_img)
-
-
-        self.verticalLayout_21.addWidget(self.groupBox_11)
-
-        self.groupBox_12 = QGroupBox(self.toolBox_2Page1)
-        self.groupBox_12.setObjectName(u"groupBox_12")
-        self.horizontalLayout_37 = QHBoxLayout(self.groupBox_12)
-        self.horizontalLayout_37.setObjectName(u"horizontalLayout_37")
-        self.verticalLayout_50 = QVBoxLayout()
-        self.verticalLayout_50.setObjectName(u"verticalLayout_50")
-        self.label_46 = QLabel(self.groupBox_12)
-        self.label_46.setObjectName(u"label_46")
-
-        self.verticalLayout_50.addWidget(self.label_46)
-
-        self.label_47 = QLabel(self.groupBox_12)
-        self.label_47.setObjectName(u"label_47")
-
-        self.verticalLayout_50.addWidget(self.label_47)
-
-
-        self.horizontalLayout_37.addLayout(self.verticalLayout_50)
-
-        self.verticalLayout_35 = QVBoxLayout()
-        self.verticalLayout_35.setObjectName(u"verticalLayout_35")
-        self.lineEdit_19 = QLineEdit(self.groupBox_12)
-        self.lineEdit_19.setObjectName(u"lineEdit_19")
-        self.lineEdit_19.setMaximumSize(QSize(320, 16777215))
-        self.lineEdit_19.setDragEnabled(True)
-
-        self.verticalLayout_35.addWidget(self.lineEdit_19)
-
-        self.lineEdit_20 = QLineEdit(self.groupBox_12)
-        self.lineEdit_20.setObjectName(u"lineEdit_20")
-        self.lineEdit_20.setMaximumSize(QSize(200, 16777215))
-        self.lineEdit_20.setDragEnabled(True)
-
-        self.verticalLayout_35.addWidget(self.lineEdit_20)
-
-
-        self.horizontalLayout_37.addLayout(self.verticalLayout_35)
-
-        self.horizontalSpacer_11 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
-
-        self.horizontalLayout_37.addItem(self.horizontalSpacer_11)
-
-        self.saw_left_curve_img = QLabel(self.groupBox_12)
-        self.saw_left_curve_img.setObjectName(u"saw_left_curve_img")
-
-        self.horizontalLayout_37.addWidget(self.saw_left_curve_img)
-
-
-        self.verticalLayout_21.addWidget(self.groupBox_12)
-
-        self.groupBox_14 = QGroupBox(self.toolBox_2Page1)
-        self.groupBox_14.setObjectName(u"groupBox_14")
-        self.horizontalLayout_38 = QHBoxLayout(self.groupBox_14)
-        self.horizontalLayout_38.setObjectName(u"horizontalLayout_38")
-        self.verticalLayout_51 = QVBoxLayout()
-        self.verticalLayout_51.setObjectName(u"verticalLayout_51")
-        self.label_48 = QLabel(self.groupBox_14)
-        self.label_48.setObjectName(u"label_48")
-
-        self.verticalLayout_51.addWidget(self.label_48)
-
-        self.label_49 = QLabel(self.groupBox_14)
-        self.label_49.setObjectName(u"label_49")
-
-        self.verticalLayout_51.addWidget(self.label_49)
-
-
-        self.horizontalLayout_38.addLayout(self.verticalLayout_51)
-
-        self.verticalLayout_36 = QVBoxLayout()
-        self.verticalLayout_36.setObjectName(u"verticalLayout_36")
-        self.lineEdit_21 = QLineEdit(self.groupBox_14)
-        self.lineEdit_21.setObjectName(u"lineEdit_21")
-        self.lineEdit_21.setMaximumSize(QSize(320, 16777215))
-        self.lineEdit_21.setDragEnabled(True)
-
-        self.verticalLayout_36.addWidget(self.lineEdit_21)
-
-        self.lineEdit_22 = QLineEdit(self.groupBox_14)
-        self.lineEdit_22.setObjectName(u"lineEdit_22")
-        self.lineEdit_22.setMaximumSize(QSize(200, 16777215))
-        self.lineEdit_22.setDragEnabled(True)
-
-        self.verticalLayout_36.addWidget(self.lineEdit_22)
-
-
-        self.horizontalLayout_38.addLayout(self.verticalLayout_36)
-
-        self.horizontalSpacer_12 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
-
-        self.horizontalLayout_38.addItem(self.horizontalSpacer_12)
-
-        self.boing_img = QLabel(self.groupBox_14)
-        self.boing_img.setObjectName(u"boing_img")
-
-        self.horizontalLayout_38.addWidget(self.boing_img)
-
-
-        self.verticalLayout_21.addWidget(self.groupBox_14)
-
-        self.groupBox_15 = QGroupBox(self.toolBox_2Page1)
+        self.groupBox_15 = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox_15.setObjectName(u"groupBox_15")
         self.horizontalLayout_39 = QHBoxLayout(self.groupBox_15)
         self.horizontalLayout_39.setObjectName(u"horizontalLayout_39")
@@ -1396,9 +1168,259 @@ class Ui_Form(object):
         self.horizontalLayout_39.addWidget(self.blip_img)
 
 
-        self.verticalLayout_21.addWidget(self.groupBox_15)
+        self.verticalLayout_48.addWidget(self.groupBox_15)
 
-        self.groupBox_16 = QGroupBox(self.toolBox_2Page1)
+        self.groupBox_12 = QGroupBox(self.scrollAreaWidgetContents_2)
+        self.groupBox_12.setObjectName(u"groupBox_12")
+        self.horizontalLayout_37 = QHBoxLayout(self.groupBox_12)
+        self.horizontalLayout_37.setObjectName(u"horizontalLayout_37")
+        self.verticalLayout_50 = QVBoxLayout()
+        self.verticalLayout_50.setObjectName(u"verticalLayout_50")
+        self.label_46 = QLabel(self.groupBox_12)
+        self.label_46.setObjectName(u"label_46")
+
+        self.verticalLayout_50.addWidget(self.label_46)
+
+        self.label_47 = QLabel(self.groupBox_12)
+        self.label_47.setObjectName(u"label_47")
+
+        self.verticalLayout_50.addWidget(self.label_47)
+
+
+        self.horizontalLayout_37.addLayout(self.verticalLayout_50)
+
+        self.verticalLayout_35 = QVBoxLayout()
+        self.verticalLayout_35.setObjectName(u"verticalLayout_35")
+        self.lineEdit_19 = QLineEdit(self.groupBox_12)
+        self.lineEdit_19.setObjectName(u"lineEdit_19")
+        self.lineEdit_19.setMaximumSize(QSize(320, 16777215))
+        self.lineEdit_19.setDragEnabled(True)
+
+        self.verticalLayout_35.addWidget(self.lineEdit_19)
+
+        self.lineEdit_20 = QLineEdit(self.groupBox_12)
+        self.lineEdit_20.setObjectName(u"lineEdit_20")
+        self.lineEdit_20.setMaximumSize(QSize(200, 16777215))
+        self.lineEdit_20.setDragEnabled(True)
+
+        self.verticalLayout_35.addWidget(self.lineEdit_20)
+
+
+        self.horizontalLayout_37.addLayout(self.verticalLayout_35)
+
+        self.horizontalSpacer_11 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_37.addItem(self.horizontalSpacer_11)
+
+        self.saw_left_curve_img = QLabel(self.groupBox_12)
+        self.saw_left_curve_img.setObjectName(u"saw_left_curve_img")
+
+        self.horizontalLayout_37.addWidget(self.saw_left_curve_img)
+
+
+        self.verticalLayout_48.addWidget(self.groupBox_12)
+
+        self.groupBox_14 = QGroupBox(self.scrollAreaWidgetContents_2)
+        self.groupBox_14.setObjectName(u"groupBox_14")
+        self.horizontalLayout_38 = QHBoxLayout(self.groupBox_14)
+        self.horizontalLayout_38.setObjectName(u"horizontalLayout_38")
+        self.verticalLayout_51 = QVBoxLayout()
+        self.verticalLayout_51.setObjectName(u"verticalLayout_51")
+        self.label_48 = QLabel(self.groupBox_14)
+        self.label_48.setObjectName(u"label_48")
+
+        self.verticalLayout_51.addWidget(self.label_48)
+
+        self.label_49 = QLabel(self.groupBox_14)
+        self.label_49.setObjectName(u"label_49")
+
+        self.verticalLayout_51.addWidget(self.label_49)
+
+
+        self.horizontalLayout_38.addLayout(self.verticalLayout_51)
+
+        self.verticalLayout_36 = QVBoxLayout()
+        self.verticalLayout_36.setObjectName(u"verticalLayout_36")
+        self.lineEdit_21 = QLineEdit(self.groupBox_14)
+        self.lineEdit_21.setObjectName(u"lineEdit_21")
+        self.lineEdit_21.setMaximumSize(QSize(320, 16777215))
+        self.lineEdit_21.setDragEnabled(True)
+
+        self.verticalLayout_36.addWidget(self.lineEdit_21)
+
+        self.lineEdit_22 = QLineEdit(self.groupBox_14)
+        self.lineEdit_22.setObjectName(u"lineEdit_22")
+        self.lineEdit_22.setMaximumSize(QSize(200, 16777215))
+        self.lineEdit_22.setDragEnabled(True)
+
+        self.verticalLayout_36.addWidget(self.lineEdit_22)
+
+
+        self.horizontalLayout_38.addLayout(self.verticalLayout_36)
+
+        self.horizontalSpacer_12 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_38.addItem(self.horizontalSpacer_12)
+
+        self.boing_img = QLabel(self.groupBox_14)
+        self.boing_img.setObjectName(u"boing_img")
+
+        self.horizontalLayout_38.addWidget(self.boing_img)
+
+
+        self.verticalLayout_48.addWidget(self.groupBox_14)
+
+        self.groupBox_11 = QGroupBox(self.scrollAreaWidgetContents_2)
+        self.groupBox_11.setObjectName(u"groupBox_11")
+        self.horizontalLayout_36 = QHBoxLayout(self.groupBox_11)
+        self.horizontalLayout_36.setObjectName(u"horizontalLayout_36")
+        self.verticalLayout_47 = QVBoxLayout()
+        self.verticalLayout_47.setObjectName(u"verticalLayout_47")
+        self.label_42 = QLabel(self.groupBox_11)
+        self.label_42.setObjectName(u"label_42")
+
+        self.verticalLayout_47.addWidget(self.label_42)
+
+        self.label_43 = QLabel(self.groupBox_11)
+        self.label_43.setObjectName(u"label_43")
+
+        self.verticalLayout_47.addWidget(self.label_43)
+
+
+        self.horizontalLayout_36.addLayout(self.verticalLayout_47)
+
+        self.verticalLayout_34 = QVBoxLayout()
+        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
+        self.lineEdit_17 = QLineEdit(self.groupBox_11)
+        self.lineEdit_17.setObjectName(u"lineEdit_17")
+        self.lineEdit_17.setMaximumSize(QSize(320, 16777215))
+        self.lineEdit_17.setDragEnabled(True)
+
+        self.verticalLayout_34.addWidget(self.lineEdit_17)
+
+        self.lineEdit_18 = QLineEdit(self.groupBox_11)
+        self.lineEdit_18.setObjectName(u"lineEdit_18")
+        self.lineEdit_18.setMaximumSize(QSize(200, 16777215))
+        self.lineEdit_18.setDragEnabled(True)
+
+        self.verticalLayout_34.addWidget(self.lineEdit_18)
+
+
+        self.horizontalLayout_36.addLayout(self.verticalLayout_34)
+
+        self.horizontalSpacer_10 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_36.addItem(self.horizontalSpacer_10)
+
+        self.saw_right_curve_img = QLabel(self.groupBox_11)
+        self.saw_right_curve_img.setObjectName(u"saw_right_curve_img")
+
+        self.horizontalLayout_36.addWidget(self.saw_right_curve_img)
+
+
+        self.verticalLayout_48.addWidget(self.groupBox_11)
+
+        self.groupBox_10 = QGroupBox(self.scrollAreaWidgetContents_2)
+        self.groupBox_10.setObjectName(u"groupBox_10")
+        self.horizontalLayout_35 = QHBoxLayout(self.groupBox_10)
+        self.horizontalLayout_35.setObjectName(u"horizontalLayout_35")
+        self.verticalLayout_46 = QVBoxLayout()
+        self.verticalLayout_46.setObjectName(u"verticalLayout_46")
+        self.label_40 = QLabel(self.groupBox_10)
+        self.label_40.setObjectName(u"label_40")
+
+        self.verticalLayout_46.addWidget(self.label_40)
+
+        self.label_41 = QLabel(self.groupBox_10)
+        self.label_41.setObjectName(u"label_41")
+
+        self.verticalLayout_46.addWidget(self.label_41)
+
+
+        self.horizontalLayout_35.addLayout(self.verticalLayout_46)
+
+        self.verticalLayout_33 = QVBoxLayout()
+        self.verticalLayout_33.setObjectName(u"verticalLayout_33")
+        self.lineEdit_15 = QLineEdit(self.groupBox_10)
+        self.lineEdit_15.setObjectName(u"lineEdit_15")
+        self.lineEdit_15.setMaximumSize(QSize(320, 16777215))
+        self.lineEdit_15.setDragEnabled(True)
+
+        self.verticalLayout_33.addWidget(self.lineEdit_15)
+
+        self.lineEdit_16 = QLineEdit(self.groupBox_10)
+        self.lineEdit_16.setObjectName(u"lineEdit_16")
+        self.lineEdit_16.setMaximumSize(QSize(200, 16777215))
+        self.lineEdit_16.setDragEnabled(True)
+
+        self.verticalLayout_33.addWidget(self.lineEdit_16)
+
+
+        self.horizontalLayout_35.addLayout(self.verticalLayout_33)
+
+        self.horizontalSpacer_9 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_35.addItem(self.horizontalSpacer_9)
+
+        self.saw_right_img = QLabel(self.groupBox_10)
+        self.saw_right_img.setObjectName(u"saw_right_img")
+
+        self.horizontalLayout_35.addWidget(self.saw_right_img)
+
+
+        self.verticalLayout_48.addWidget(self.groupBox_10)
+
+        self.groupBox_13 = QGroupBox(self.scrollAreaWidgetContents_2)
+        self.groupBox_13.setObjectName(u"groupBox_13")
+        self.horizontalLayout_34 = QHBoxLayout(self.groupBox_13)
+        self.horizontalLayout_34.setObjectName(u"horizontalLayout_34")
+        self.verticalLayout_39 = QVBoxLayout()
+        self.verticalLayout_39.setObjectName(u"verticalLayout_39")
+        self.label_32 = QLabel(self.groupBox_13)
+        self.label_32.setObjectName(u"label_32")
+
+        self.verticalLayout_39.addWidget(self.label_32)
+
+        self.label_33 = QLabel(self.groupBox_13)
+        self.label_33.setObjectName(u"label_33")
+
+        self.verticalLayout_39.addWidget(self.label_33)
+
+
+        self.horizontalLayout_34.addLayout(self.verticalLayout_39)
+
+        self.verticalLayout_32 = QVBoxLayout()
+        self.verticalLayout_32.setObjectName(u"verticalLayout_32")
+        self.lineEdit_13 = QLineEdit(self.groupBox_13)
+        self.lineEdit_13.setObjectName(u"lineEdit_13")
+        self.lineEdit_13.setMaximumSize(QSize(320, 16777215))
+        self.lineEdit_13.setDragEnabled(True)
+
+        self.verticalLayout_32.addWidget(self.lineEdit_13)
+
+        self.lineEdit_14 = QLineEdit(self.groupBox_13)
+        self.lineEdit_14.setObjectName(u"lineEdit_14")
+        self.lineEdit_14.setMaximumSize(QSize(200, 16777215))
+        self.lineEdit_14.setDragEnabled(True)
+
+        self.verticalLayout_32.addWidget(self.lineEdit_14)
+
+
+        self.horizontalLayout_34.addLayout(self.verticalLayout_32)
+
+        self.horizontalSpacer_8 = QSpacerItem(8, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_34.addItem(self.horizontalSpacer_8)
+
+        self.saw_right_inner_img = QLabel(self.groupBox_13)
+        self.saw_right_inner_img.setObjectName(u"saw_right_inner_img")
+
+        self.horizontalLayout_34.addWidget(self.saw_right_inner_img)
+
+
+        self.verticalLayout_48.addWidget(self.groupBox_13)
+
+        self.groupBox_16 = QGroupBox(self.scrollAreaWidgetContents_2)
         self.groupBox_16.setObjectName(u"groupBox_16")
         self.horizontalLayout_40 = QHBoxLayout(self.groupBox_16)
         self.horizontalLayout_40.setObjectName(u"horizontalLayout_40")
@@ -1446,11 +1468,441 @@ class Ui_Form(object):
         self.horizontalLayout_40.addWidget(self.sine_blip_img)
 
 
-        self.verticalLayout_21.addWidget(self.groupBox_16)
+        self.verticalLayout_48.addWidget(self.groupBox_16)
 
-        self.toolBox_2.addItem(self.toolBox_2Page1, u"Expressions")
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents_2)
 
-        self.verticalLayout_20.addWidget(self.toolBox_2)
+        self.verticalLayout_21.addWidget(self.scrollArea)
+
+        self.tabWidget_2.addTab(self.tabWidget_2Page1, "")
+        self.tab_3 = QWidget()
+        self.tab_3.setObjectName(u"tab_3")
+        self.verticalLayout_19 = QVBoxLayout(self.tab_3)
+        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.scrollArea_2 = QScrollArea(self.tab_3)
+        self.scrollArea_2.setObjectName(u"scrollArea_2")
+        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.scrollArea_2.sizePolicy().hasHeightForWidth())
+        self.scrollArea_2.setSizePolicy(sizePolicy)
+        self.scrollArea_2.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_3 = QWidget()
+        self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 485, 591))
+        self.verticalLayout_54 = QVBoxLayout(self.scrollAreaWidgetContents_3)
+        self.verticalLayout_54.setObjectName(u"verticalLayout_54")
+        self.label_73 = QLabel(self.scrollAreaWidgetContents_3)
+        self.label_73.setObjectName(u"label_73")
+        self.label_73.setTextFormat(Qt.PlainText)
+        self.label_73.setScaledContents(False)
+
+        self.verticalLayout_54.addWidget(self.label_73)
+
+        self.label_74 = QLabel(self.scrollAreaWidgetContents_3)
+        self.label_74.setObjectName(u"label_74")
+
+        self.verticalLayout_54.addWidget(self.label_74)
+
+        self.label_77 = QLabel(self.scrollAreaWidgetContents_3)
+        self.label_77.setObjectName(u"label_77")
+
+        self.verticalLayout_54.addWidget(self.label_77)
+
+        self.groupBox_4 = QGroupBox(self.scrollAreaWidgetContents_3)
+        self.groupBox_4.setObjectName(u"groupBox_4")
+        self.verticalLayout_57 = QVBoxLayout(self.groupBox_4)
+        self.verticalLayout_57.setObjectName(u"verticalLayout_57")
+        self.line_8 = QFrame(self.groupBox_4)
+        self.line_8.setObjectName(u"line_8")
+        self.line_8.setFrameShape(QFrame.HLine)
+        self.line_8.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_57.addWidget(self.line_8)
+
+        self.frame = QFrame(self.groupBox_4)
+        self.frame.setObjectName(u"frame")
+        self.gridLayout = QGridLayout(self.frame)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.gridLayout.setSizeConstraint(QLayout.SetNoConstraint)
+        self.ex_proj_dir_check = QCheckBox(self.frame)
+        self.ex_proj_dir_check.setObjectName(u"ex_proj_dir_check")
+
+        self.gridLayout.addWidget(self.ex_proj_dir_check, 0, 0, 1, 1)
+
+        self.exp_scriptname_check = QCheckBox(self.frame)
+        self.exp_scriptname_check.setObjectName(u"exp_scriptname_check")
+        self.exp_scriptname_check.setEnabled(False)
+
+        self.gridLayout.addWidget(self.exp_scriptname_check, 1, 0, 1, 1)
+
+        self.exp_script_path_check = QCheckBox(self.frame)
+        self.exp_script_path_check.setObjectName(u"exp_script_path_check")
+
+        self.gridLayout.addWidget(self.exp_script_path_check, 2, 0, 1, 1)
+
+        self.exp_cc_check = QCheckBox(self.frame)
+        self.exp_cc_check.setObjectName(u"exp_cc_check")
+
+        self.gridLayout.addWidget(self.exp_cc_check, 0, 2, 1, 1)
+
+        self.exp_frame_current_check = QCheckBox(self.frame)
+        self.exp_frame_current_check.setObjectName(u"exp_frame_current_check")
+
+        self.gridLayout.addWidget(self.exp_frame_current_check, 3, 1, 1, 1)
+
+        self.exp_fps_check = QCheckBox(self.frame)
+        self.exp_fps_check.setObjectName(u"exp_fps_check")
+
+        self.gridLayout.addWidget(self.exp_fps_check, 2, 1, 1, 1)
+
+        self.exp_add_format_check = QCheckBox(self.frame)
+        self.exp_add_format_check.setObjectName(u"exp_add_format_check")
+
+        self.gridLayout.addWidget(self.exp_add_format_check, 0, 1, 1, 1)
+
+        self.exp_framerange_check = QCheckBox(self.frame)
+        self.exp_framerange_check.setObjectName(u"exp_framerange_check")
+
+        self.gridLayout.addWidget(self.exp_framerange_check, 1, 1, 1, 1)
+
+        self.exp_monitor_lut_check = QCheckBox(self.frame)
+        self.exp_monitor_lut_check.setObjectName(u"exp_monitor_lut_check")
+
+        self.gridLayout.addWidget(self.exp_monitor_lut_check, 2, 2, 1, 1)
+
+        self.exp_general_info_check = QCheckBox(self.frame)
+        self.exp_general_info_check.setObjectName(u"exp_general_info_check")
+        self.exp_general_info_check.setEnabled(False)
+
+        self.gridLayout.addWidget(self.exp_general_info_check, 1, 2, 1, 1)
+
+        self.exp_colormanagement_check = QCheckBox(self.frame)
+        self.exp_colormanagement_check.setObjectName(u"exp_colormanagement_check")
+
+        self.gridLayout.addWidget(self.exp_colormanagement_check, 3, 0, 1, 1)
+
+
+        self.verticalLayout_57.addWidget(self.frame)
+
+        self.label_78 = QLabel(self.groupBox_4)
+        self.label_78.setObjectName(u"label_78")
+
+        self.verticalLayout_57.addWidget(self.label_78)
+
+        self.label_76 = QLabel(self.groupBox_4)
+        self.label_76.setObjectName(u"label_76")
+
+        self.verticalLayout_57.addWidget(self.label_76)
+
+        self.line_22 = QFrame(self.groupBox_4)
+        self.line_22.setObjectName(u"line_22")
+        self.line_22.setFrameShape(QFrame.HLine)
+        self.line_22.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_57.addWidget(self.line_22)
+
+        self.frame1 = QFrame(self.groupBox_4)
+        self.frame1.setObjectName(u"frame1")
+        self.gridLayout_3 = QGridLayout(self.frame1)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.gridLayout_3.setSizeConstraint(QLayout.SetNoConstraint)
+        self.exp_all_input_check = QCheckBox(self.frame1)
+        self.exp_all_input_check.setObjectName(u"exp_all_input_check")
+
+        self.gridLayout_3.addWidget(self.exp_all_input_check, 2, 0, 1, 1)
+
+        self.exp_last_frame_check = QCheckBox(self.frame1)
+        self.exp_last_frame_check.setObjectName(u"exp_last_frame_check")
+
+        self.gridLayout_3.addWidget(self.exp_last_frame_check, 1, 2, 1, 1)
+
+        self.exp_value_mix_check = QCheckBox(self.frame1)
+        self.exp_value_mix_check.setObjectName(u"exp_value_mix_check")
+
+        self.gridLayout_3.addWidget(self.exp_value_mix_check, 0, 1, 1, 1)
+
+        self.exp_all_values_check = QCheckBox(self.frame1)
+        self.exp_all_values_check.setObjectName(u"exp_all_values_check")
+
+        self.gridLayout_3.addWidget(self.exp_all_values_check, 2, 1, 1, 1)
+
+        self.exp_gui_check = QCheckBox(self.frame1)
+        self.exp_gui_check.setObjectName(u"exp_gui_check")
+
+        self.gridLayout_3.addWidget(self.exp_gui_check, 1, 0, 1, 1)
+
+        self.exp_first_frame_check = QCheckBox(self.frame1)
+        self.exp_first_frame_check.setObjectName(u"exp_first_frame_check")
+
+        self.gridLayout_3.addWidget(self.exp_first_frame_check, 1, 1, 1, 1)
+
+        self.exp_value_size_check = QCheckBox(self.frame1)
+        self.exp_value_size_check.setObjectName(u"exp_value_size_check")
+
+        self.gridLayout_3.addWidget(self.exp_value_size_check, 0, 0, 1, 1)
+
+        self.exp_main_values_check = QCheckBox(self.frame1)
+        self.exp_main_values_check.setObjectName(u"exp_main_values_check")
+
+        self.gridLayout_3.addWidget(self.exp_main_values_check, 2, 2, 1, 1)
+
+        self.exp_value_input_check = QCheckBox(self.frame1)
+        self.exp_value_input_check.setObjectName(u"exp_value_input_check")
+
+        self.gridLayout_3.addWidget(self.exp_value_input_check, 0, 2, 1, 1)
+
+        self.exp_node_count_check = QCheckBox(self.frame1)
+        self.exp_node_count_check.setObjectName(u"exp_node_count_check")
+
+        self.gridLayout_3.addWidget(self.exp_node_count_check, 3, 0, 1, 1)
+
+        self.exp_extension_check = QCheckBox(self.frame1)
+        self.exp_extension_check.setObjectName(u"exp_extension_check")
+
+        self.gridLayout_3.addWidget(self.exp_extension_check, 3, 1, 1, 1)
+
+
+        self.verticalLayout_57.addWidget(self.frame1)
+
+        self.horizontalLayout_16 = QHBoxLayout()
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.expression_reslt = QLineEdit(self.groupBox_4)
+        self.expression_reslt.setObjectName(u"expression_reslt")
+
+        self.horizontalLayout_16.addWidget(self.expression_reslt)
+
+
+        self.verticalLayout_57.addLayout(self.horizontalLayout_16)
+
+        self.line_25 = QFrame(self.groupBox_4)
+        self.line_25.setObjectName(u"line_25")
+        self.line_25.setFrameShape(QFrame.HLine)
+        self.line_25.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_57.addWidget(self.line_25)
+
+        self.label_83 = QLabel(self.groupBox_4)
+        self.label_83.setObjectName(u"label_83")
+
+        self.verticalLayout_57.addWidget(self.label_83)
+
+        self.label_75 = QLabel(self.groupBox_4)
+        self.label_75.setObjectName(u"label_75")
+
+        self.verticalLayout_57.addWidget(self.label_75)
+
+        self.horizontalLayout_9 = QHBoxLayout()
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.create_text_node_btn = QPushButton(self.groupBox_4)
+        self.create_text_node_btn.setObjectName(u"create_text_node_btn")
+
+        self.horizontalLayout_9.addWidget(self.create_text_node_btn)
+
+        self.create_backd_btn = QPushButton(self.groupBox_4)
+        self.create_backd_btn.setObjectName(u"create_backd_btn")
+
+        self.horizontalLayout_9.addWidget(self.create_backd_btn)
+
+        self.add_label_btn = QPushButton(self.groupBox_4)
+        self.add_label_btn.setObjectName(u"add_label_btn")
+
+        self.horizontalLayout_9.addWidget(self.add_label_btn)
+
+        self.create_stick_node_btn = QPushButton(self.groupBox_4)
+        self.create_stick_node_btn.setObjectName(u"create_stick_node_btn")
+
+        self.horizontalLayout_9.addWidget(self.create_stick_node_btn)
+
+
+        self.verticalLayout_57.addLayout(self.horizontalLayout_9)
+
+
+        self.verticalLayout_54.addWidget(self.groupBox_4)
+
+        self.label_79 = QLabel(self.scrollAreaWidgetContents_3)
+        self.label_79.setObjectName(u"label_79")
+
+        self.verticalLayout_54.addWidget(self.label_79)
+
+        self.create_def_water = QPushButton(self.scrollAreaWidgetContents_3)
+        self.create_def_water.setObjectName(u"create_def_water")
+
+        self.verticalLayout_54.addWidget(self.create_def_water)
+
+        self.line_21 = QFrame(self.scrollAreaWidgetContents_3)
+        self.line_21.setObjectName(u"line_21")
+        self.line_21.setFrameShape(QFrame.HLine)
+        self.line_21.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_54.addWidget(self.line_21)
+
+        self.label_82 = QLabel(self.scrollAreaWidgetContents_3)
+        self.label_82.setObjectName(u"label_82")
+
+        self.verticalLayout_54.addWidget(self.label_82)
+
+        self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_54.addItem(self.verticalSpacer_3)
+
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_3)
+
+        self.verticalLayout_19.addWidget(self.scrollArea_2)
+
+        self.tabWidget_2.addTab(self.tab_3, "")
+        self.tab_7 = QWidget()
+        self.tab_7.setObjectName(u"tab_7")
+        self.verticalLayout_58 = QVBoxLayout(self.tab_7)
+        self.verticalLayout_58.setObjectName(u"verticalLayout_58")
+        self.frame2 = QFrame(self.tab_7)
+        self.frame2.setObjectName(u"frame2")
+        self.gridLayout_4 = QGridLayout(self.frame2)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.w_bounce_lbl = QLabel(self.frame2)
+        self.w_bounce_lbl.setObjectName(u"w_bounce_lbl")
+
+        self.gridLayout_4.addWidget(self.w_bounce_lbl, 2, 0, 1, 1, Qt.AlignHCenter)
+
+        self.CW_elipse_btn = QPushButton(self.frame2)
+        self.CW_elipse_btn.setObjectName(u"CW_elipse_btn")
+
+        self.gridLayout_4.addWidget(self.CW_elipse_btn, 7, 0, 1, 1)
+
+        self.heart_btn = QPushButton(self.frame2)
+        self.heart_btn.setObjectName(u"heart_btn")
+
+        self.gridLayout_4.addWidget(self.heart_btn, 5, 0, 1, 1)
+
+        self.scale_up_expression_lbl = QLabel(self.frame2)
+        self.scale_up_expression_lbl.setObjectName(u"scale_up_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.scale_up_expression_lbl, 2, 2, 1, 1, Qt.AlignHCenter)
+
+        self.CCW_Ellipse_expression_lbl = QLabel(self.frame2)
+        self.CCW_Ellipse_expression_lbl.setObjectName(u"CCW_Ellipse_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.CCW_Ellipse_expression_lbl, 6, 2, 1, 1, Qt.AlignHCenter)
+
+        self.h_bounce_btn = QPushButton(self.frame2)
+        self.h_bounce_btn.setObjectName(u"h_bounce_btn")
+
+        self.gridLayout_4.addWidget(self.h_bounce_btn, 5, 1, 1, 1)
+
+        self.ccw_elipse_btn = QPushButton(self.frame2)
+        self.ccw_elipse_btn.setObjectName(u"ccw_elipse_btn")
+
+        self.gridLayout_4.addWidget(self.ccw_elipse_btn, 7, 2, 1, 1)
+
+        self.scale_up_btn = QPushButton(self.frame2)
+        self.scale_up_btn.setObjectName(u"scale_up_btn")
+
+        self.gridLayout_4.addWidget(self.scale_up_btn, 3, 2, 1, 1)
+
+        self.h_bounce_expression_lbl = QLabel(self.frame2)
+        self.h_bounce_expression_lbl.setObjectName(u"h_bounce_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.h_bounce_expression_lbl, 4, 1, 1, 1, Qt.AlignHCenter)
+
+        self.zigzag_btn = QPushButton(self.frame2)
+        self.zigzag_btn.setObjectName(u"zigzag_btn")
+
+        self.gridLayout_4.addWidget(self.zigzag_btn, 1, 1, 1, 1)
+
+        self.w_bounce_btn = QPushButton(self.frame2)
+        self.w_bounce_btn.setObjectName(u"w_bounce_btn")
+
+        self.gridLayout_4.addWidget(self.w_bounce_btn, 3, 0, 1, 1)
+
+        self.cw_circle_btn = QPushButton(self.frame2)
+        self.cw_circle_btn.setObjectName(u"cw_circle_btn")
+
+        self.gridLayout_4.addWidget(self.cw_circle_btn, 7, 1, 1, 1)
+
+        self.drift_expression_lbl = QLabel(self.frame2)
+        self.drift_expression_lbl.setObjectName(u"drift_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.drift_expression_lbl, 4, 2, 1, 1, Qt.AlignHCenter)
+
+        self.wiggle_btn = QPushButton(self.frame2)
+        self.wiggle_btn.setObjectName(u"wiggle_btn")
+
+        self.gridLayout_4.addWidget(self.wiggle_btn, 1, 2, 1, 1)
+
+        self.CW_Ellipse_expression_lbl = QLabel(self.frame2)
+        self.CW_Ellipse_expression_lbl.setObjectName(u"CW_Ellipse_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.CW_Ellipse_expression_lbl, 6, 0, 1, 1, Qt.AlignHCenter)
+
+        self.drift_btn = QPushButton(self.frame2)
+        self.drift_btn.setObjectName(u"drift_btn")
+
+        self.gridLayout_4.addWidget(self.drift_btn, 5, 2, 1, 1)
+
+        self.CW_Circle_expression_lbl = QLabel(self.frame2)
+        self.CW_Circle_expression_lbl.setObjectName(u"CW_Circle_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.CW_Circle_expression_lbl, 6, 1, 1, 1, Qt.AlignHCenter)
+
+        self.heart_expression_lbl = QLabel(self.frame2)
+        self.heart_expression_lbl.setObjectName(u"heart_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.heart_expression_lbl, 4, 0, 1, 1, Qt.AlignHCenter)
+
+        self.blink_btn = QPushButton(self.frame2)
+        self.blink_btn.setObjectName(u"blink_btn")
+
+        self.gridLayout_4.addWidget(self.blink_btn, 1, 0, 1, 1)
+
+        self.blink_expression_lbl = QLabel(self.frame2)
+        self.blink_expression_lbl.setObjectName(u"blink_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.blink_expression_lbl, 0, 0, 1, 1, Qt.AlignHCenter)
+
+        self.Zigzag_expression_lbl = QLabel(self.frame2)
+        self.Zigzag_expression_lbl.setObjectName(u"Zigzag_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.Zigzag_expression_lbl, 0, 1, 1, 1, Qt.AlignHCenter)
+
+        self.wiggle_expression_lbl = QLabel(self.frame2)
+        self.wiggle_expression_lbl.setObjectName(u"wiggle_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.wiggle_expression_lbl, 0, 2, 1, 1, Qt.AlignHCenter)
+
+        self.CCW_Circle_expression_lbl = QLabel(self.frame2)
+        self.CCW_Circle_expression_lbl.setObjectName(u"CCW_Circle_expression_lbl")
+
+        self.gridLayout_4.addWidget(self.CCW_Circle_expression_lbl, 2, 1, 1, 1)
+
+        self.ccw_circle_btn = QPushButton(self.frame2)
+        self.ccw_circle_btn.setObjectName(u"ccw_circle_btn")
+
+        self.gridLayout_4.addWidget(self.ccw_circle_btn, 3, 1, 1, 1)
+
+
+        self.verticalLayout_58.addWidget(self.frame2)
+
+        self.verticalLayout_59 = QVBoxLayout()
+        self.verticalLayout_59.setObjectName(u"verticalLayout_59")
+        self.line_26 = QFrame(self.tab_7)
+        self.line_26.setObjectName(u"line_26")
+        self.line_26.setFrameShape(QFrame.HLine)
+        self.line_26.setFrameShadow(QFrame.Sunken)
+
+        self.verticalLayout_59.addWidget(self.line_26)
+
+        self.pushButton = QPushButton(self.tab_7)
+        self.pushButton.setObjectName(u"pushButton")
+
+        self.verticalLayout_59.addWidget(self.pushButton)
+
+
+        self.verticalLayout_58.addLayout(self.verticalLayout_59)
+
+        self.tabWidget_2.addTab(self.tab_7, "")
+
+        self.verticalLayout_20.addWidget(self.tabWidget_2)
 
         self.tabWidget.addTab(self.tab_2, "")
         self.tab_6 = QWidget()
@@ -1854,7 +2306,8 @@ class Ui_Form(object):
 
         self.retranslateUi(Form)
 
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(3)
+        self.tabWidget_2.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(Form)
@@ -1980,20 +2433,24 @@ class Ui_Form(object):
         self.suffix_line_edit.setToolTip(QCoreApplication.translate("Form", u"If Empty there is not any changes of the current name.", None))
 #endif // QT_CONFIG(tooltip)
         self.file_type_combo.setItemText(0, QCoreApplication.translate("Form", u"exr", None))
-        self.file_type_combo.setItemText(1, QCoreApplication.translate("Form", u"tga", None))
-        self.file_type_combo.setItemText(2, QCoreApplication.translate("Form", u"dpx", None))
-        self.file_type_combo.setItemText(3, QCoreApplication.translate("Form", u"tiff", None))
-        self.file_type_combo.setItemText(4, QCoreApplication.translate("Form", u"jpg", None))
+        self.file_type_combo.setItemText(1, QCoreApplication.translate("Form", u"png", None))
+        self.file_type_combo.setItemText(2, QCoreApplication.translate("Form", u"tga", None))
+        self.file_type_combo.setItemText(3, QCoreApplication.translate("Form", u"dpx", None))
+        self.file_type_combo.setItemText(4, QCoreApplication.translate("Form", u"tiff", None))
+        self.file_type_combo.setItemText(5, QCoreApplication.translate("Form", u"jpg", None))
 
 #if QT_CONFIG(tooltip)
         self.file_type_combo.setToolTip(QCoreApplication.translate("Form", u"Select file type. Make sure what is enough for you.", None))
 #endif // QT_CONFIG(tooltip)
+        self.label_72.setText("")
         self.locate_grp_bx.setTitle(QCoreApplication.translate("Form", u"Location Setting", None))
         self.label_22.setText(QCoreApplication.translate("Form", u"Input specific  path: ", None))
 #if QT_CONFIG(tooltip)
         self.location_line_edit.setToolTip(QCoreApplication.translate("Form", u"Change manually direction of the render node.", None))
 #endif // QT_CONFIG(tooltip)
         self.select_btn.setText(QCoreApplication.translate("Form", u"Select", None))
+        self.label_71.setText(QCoreApplication.translate("Form", u"Create subdirectory:", None))
+        self.set_subdir_name_lbl.setPlaceholderText(QCoreApplication.translate("Form", u"If you don't want to sub directory please pass to empty.", None))
         self.groupBox_2.setTitle("")
         self.label_15.setText(QCoreApplication.translate("Form", u"LAST CHECK", None))
         self.label_12.setText(QCoreApplication.translate("Form", u"File Name:", None))
@@ -2015,13 +2472,11 @@ class Ui_Form(object):
 #endif // QT_CONFIG(tooltip)
         self.default_btn.setText(QCoreApplication.translate("Form", u"Create Matte Write", None))
 #if QT_CONFIG(tooltip)
-        self.get_folder_btn.setToolTip(QCoreApplication.translate("Form", u"Get current script directory.", None))
-#endif // QT_CONFIG(tooltip)
-        self.get_folder_btn.setText(QCoreApplication.translate("Form", u"Explore", None))
-#if QT_CONFIG(tooltip)
         self.create_write_node_btn.setToolTip(QCoreApplication.translate("Form", u"Create write node with current settings.", None))
 #endif // QT_CONFIG(tooltip)
         self.create_write_node_btn.setText(QCoreApplication.translate("Form", u"Create", None))
+        self.label_80.setText(QCoreApplication.translate("Form", u"If project directory is not setted than please use the specific path section. Otherwise this plugin could", None))
+        self.label_81.setText(QCoreApplication.translate("Form", u"return some error.", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), QCoreApplication.translate("Form", u"Write Node", None))
         self.groupBox_3.setTitle(QCoreApplication.translate("Form", u"Randomize", None))
         self.label_24.setText(QCoreApplication.translate("Form", u"Formula:", None))
@@ -2053,24 +2508,12 @@ class Ui_Form(object):
         self.lineEdit_9.setText(QCoreApplication.translate("Form", u"int(sin(2*pi*(frame+offset)/waveLength)+1) * (maxVal-minVal) + minVal", None))
         self.lineEdit_10.setText(QCoreApplication.translate("Form", u"int(sin(2*pi*(frame)/24)+1)", None))
         self.sqr_img.setText("")
-        self.groupBox_13.setTitle(QCoreApplication.translate("Form", u"Saw Right Inner", None))
-        self.label_32.setText(QCoreApplication.translate("Form", u"Formula:", None))
-        self.label_33.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
-        self.lineEdit_13.setText(QCoreApplication.translate("Form", u"(exp(2*pi*((frame+offset) % waveLength)/waveLength)-1)/exp(2*pi) * (maxVal-minVal) + minVal", None))
-        self.lineEdit_14.setText(QCoreApplication.translate("Form", u"(exp(2*pi*((frame) % 24)/24)-1)/exp(2*pi)", None))
-        self.saw_right_inner_img.setText("")
-        self.groupBox_10.setTitle(QCoreApplication.translate("Form", u"Saw Right", None))
-        self.label_40.setText(QCoreApplication.translate("Form", u"Formula:", None))
-        self.label_41.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
-        self.lineEdit_15.setText(QCoreApplication.translate("Form", u"((frame+offset) % waveLength)/waveLength * (maxVal-minVal) + minVal", None))
-        self.lineEdit_16.setText(QCoreApplication.translate("Form", u"((frame) % 24)/24", None))
-        self.saw_right_img.setText("")
-        self.groupBox_11.setTitle(QCoreApplication.translate("Form", u"Saw Right Curve", None))
-        self.label_42.setText(QCoreApplication.translate("Form", u"Formula:", None))
-        self.label_43.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
-        self.lineEdit_17.setText(QCoreApplication.translate("Form", u"sin((pi*(frame+offset)/(2*waveLength)) % (pi/2)) * (maxVal-minVal) + minVal", None))
-        self.lineEdit_18.setText(QCoreApplication.translate("Form", u"sin((pi*(frame)/(2*24)) % (pi/2))", None))
-        self.saw_right_curve_img.setText("")
+        self.groupBox_15.setTitle(QCoreApplication.translate("Form", u"Blip", None))
+        self.label_50.setText(QCoreApplication.translate("Form", u"Formula:", None))
+        self.label_51.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
+        self.lineEdit_23.setText(QCoreApplication.translate("Form", u"((frame+(offset+waveLength)) % (waveLength+blipLength)/(waveLength)) *(waveLength/blipLength) - (waveLength/blipLength) >= 0 ? maxVal : minVal", None))
+        self.lineEdit_24.setText(QCoreApplication.translate("Form", u"((frame+20) % (20+5)/(20)) *(20/5) - (20/5) >= 0 ? 1 : 0", None))
+        self.blip_img.setText("")
         self.groupBox_12.setTitle(QCoreApplication.translate("Form", u"Saw Left Curve", None))
         self.label_46.setText(QCoreApplication.translate("Form", u"Formula:", None))
         self.label_47.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
@@ -2083,19 +2526,95 @@ class Ui_Form(object):
         self.lineEdit_21.setText(QCoreApplication.translate("Form", u"abs(sin(pi*(frame + offset)/waveLength))* (maxVal-minVal) + minVal", None))
         self.lineEdit_22.setText(QCoreApplication.translate("Form", u"abs(sin(pi*(frame)/24))", None))
         self.boing_img.setText("")
-        self.groupBox_15.setTitle(QCoreApplication.translate("Form", u"Blip", None))
-        self.label_50.setText(QCoreApplication.translate("Form", u"Formula:", None))
-        self.label_51.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
-        self.lineEdit_23.setText(QCoreApplication.translate("Form", u"((frame+(offset+waveLength)) % (waveLength+blipLength)/(waveLength)) *(waveLength/blipLength) - (waveLength/blipLength) >= 0 ? maxVal : minVal", None))
-        self.lineEdit_24.setText(QCoreApplication.translate("Form", u"((frame+20) % (20+5)/(20)) *(20/5) - (20/5) >= 0 ? 1 : 0", None))
-        self.blip_img.setText("")
+        self.groupBox_11.setTitle(QCoreApplication.translate("Form", u"Saw Right Curve", None))
+        self.label_42.setText(QCoreApplication.translate("Form", u"Formula:", None))
+        self.label_43.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
+        self.lineEdit_17.setText(QCoreApplication.translate("Form", u"sin((pi*(frame+offset)/(2*waveLength)) % (pi/2)) * (maxVal-minVal) + minVal", None))
+        self.lineEdit_18.setText(QCoreApplication.translate("Form", u"sin((pi*(frame)/(2*24)) % (pi/2))", None))
+        self.saw_right_curve_img.setText("")
+        self.groupBox_10.setTitle(QCoreApplication.translate("Form", u"Saw Right", None))
+        self.label_40.setText(QCoreApplication.translate("Form", u"Formula:", None))
+        self.label_41.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
+        self.lineEdit_15.setText(QCoreApplication.translate("Form", u"((frame+offset) % waveLength)/waveLength * (maxVal-minVal) + minVal", None))
+        self.lineEdit_16.setText(QCoreApplication.translate("Form", u"((frame) % 24)/24", None))
+        self.saw_right_img.setText("")
+        self.groupBox_13.setTitle(QCoreApplication.translate("Form", u"Saw Right Inner", None))
+        self.label_32.setText(QCoreApplication.translate("Form", u"Formula:", None))
+        self.label_33.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
+        self.lineEdit_13.setText(QCoreApplication.translate("Form", u"(exp(2*pi*((frame+offset) % waveLength)/waveLength)-1)/exp(2*pi) * (maxVal-minVal) + minVal", None))
+        self.lineEdit_14.setText(QCoreApplication.translate("Form", u"(exp(2*pi*((frame) % 24)/24)-1)/exp(2*pi)", None))
+        self.saw_right_inner_img.setText("")
         self.groupBox_16.setTitle(QCoreApplication.translate("Form", u"Sine Blip", None))
         self.label_54.setText(QCoreApplication.translate("Form", u"Formula:", None))
         self.label_55.setText(QCoreApplication.translate("Form", u"Quick Wave", None))
         self.lineEdit_25.setText(QCoreApplication.translate("Form", u"((int((frame+offset) % waveLength)) >= 0 ? ((int((frame+offset) % waveLength)) <= (0+(blipLength-1)) ? ((sin(pi*((frame+offset) % waveLength)/blipLength)/2+1/2) * (2*maxVal-2*minVal) + (2*minVal-maxVal)) : minVal)  : minVal)", None))
         self.lineEdit_26.setText(QCoreApplication.translate("Form", u"((int(frame % 20)) >= 0 ? ((int(frame % 20)) <= (5-1) ? ((sin(pi*(frame % 20)/5)/2+1/2) * (2*1-2*0) + (2*0-1)) : 0)  : 0)", None))
         self.sine_blip_img.setText("")
-        self.toolBox_2.setItemText(self.toolBox_2.indexOf(self.toolBox_2Page1), QCoreApplication.translate("Form", u"Expressions", None))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tabWidget_2Page1), QCoreApplication.translate("Form", u"Main Expression", None))
+        self.label_73.setText(QCoreApplication.translate("Form", u"With the text node, you can quickly create complex expressions. For example; It will be just", None))
+        self.label_74.setText(QCoreApplication.translate("Form", u"to select and assign to blend many different expressions...", None))
+        self.label_77.setText("")
+        self.groupBox_4.setTitle(QCoreApplication.translate("Form", u"Add expression (General)", None))
+        self.ex_proj_dir_check.setText(QCoreApplication.translate("Form", u"Project Directory", None))
+        self.exp_scriptname_check.setText(QCoreApplication.translate("Form", u"Script name", None))
+        self.exp_script_path_check.setText(QCoreApplication.translate("Form", u"Script path ", None))
+        self.exp_cc_check.setText(QCoreApplication.translate("Form", u"Colorspace", None))
+        self.exp_frame_current_check.setText(QCoreApplication.translate("Form", u"Frame (Current)", None))
+        self.exp_fps_check.setText(QCoreApplication.translate("Form", u"FPS", None))
+        self.exp_add_format_check.setText(QCoreApplication.translate("Form", u"Add Format", None))
+        self.exp_framerange_check.setText(QCoreApplication.translate("Form", u"Frame range", None))
+        self.exp_monitor_lut_check.setText(QCoreApplication.translate("Form", u"Monitor Lut", None))
+        self.exp_general_info_check.setText(QCoreApplication.translate("Form", u"Show general info ", None))
+        self.exp_colormanagement_check.setText(QCoreApplication.translate("Form", u"Color Management", None))
+        self.label_78.setText("")
+        self.label_76.setText(QCoreApplication.translate("Form", u"Add Expression", None))
+        self.exp_all_input_check.setText(QCoreApplication.translate("Form", u"All inputs name", None))
+        self.exp_last_frame_check.setText(QCoreApplication.translate("Form", u"Last frame", None))
+        self.exp_value_mix_check.setText(QCoreApplication.translate("Form", u"Value Mix", None))
+        self.exp_all_values_check.setText(QCoreApplication.translate("Form", u"All Values of node", None))
+        self.exp_gui_check.setText(QCoreApplication.translate("Form", u"$gui", None))
+        self.exp_first_frame_check.setText(QCoreApplication.translate("Form", u"First frame", None))
+        self.exp_value_size_check.setText(QCoreApplication.translate("Form", u"Value size", None))
+        self.exp_main_values_check.setText(QCoreApplication.translate("Form", u"Main values of node", None))
+        self.exp_value_input_check.setText(QCoreApplication.translate("Form", u"Value input name", None))
+        self.exp_node_count_check.setText(QCoreApplication.translate("Form", u"Input this (Input count)", None))
+        self.exp_extension_check.setText(QCoreApplication.translate("Form", u"Extension", None))
+        self.label_83.setText("")
+        self.label_75.setText(QCoreApplication.translate("Form", u"Create selected node to:", None))
+        self.create_text_node_btn.setText(QCoreApplication.translate("Form", u"Text Node", None))
+        self.create_backd_btn.setText(QCoreApplication.translate("Form", u"Backdrop", None))
+        self.add_label_btn.setText(QCoreApplication.translate("Form", u"Add label", None))
+        self.create_stick_node_btn.setText(QCoreApplication.translate("Form", u"Sticky Note", None))
+        self.label_79.setText("")
+        self.create_def_water.setText(QCoreApplication.translate("Form", u"Create default watermark", None))
+        self.label_82.setText(QCoreApplication.translate("Form", u"<html><head/><body><p><span style=\" font-weight:600;\">Create default watermark:</span> If you click this button than shotname, frame, frame range will be</p><p>add the new text node. You can concatinate it end of pipes.</p></body></html>", None))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_3), QCoreApplication.translate("Form", u"Text Expressions", None))
+        self.w_bounce_lbl.setText(QCoreApplication.translate("Form", u"w_bounce_lbl", None))
+        self.CW_elipse_btn.setText(QCoreApplication.translate("Form", u"CW Ellipse", None))
+        self.heart_btn.setText(QCoreApplication.translate("Form", u"Heart", None))
+        self.scale_up_expression_lbl.setText(QCoreApplication.translate("Form", u"scale_up_expression_lbl", None))
+        self.CCW_Ellipse_expression_lbl.setText(QCoreApplication.translate("Form", u"CCW_Ellipse_expression_lbl", None))
+        self.h_bounce_btn.setText(QCoreApplication.translate("Form", u"H Bounce", None))
+        self.ccw_elipse_btn.setText(QCoreApplication.translate("Form", u"CCW Ellipse", None))
+        self.scale_up_btn.setText(QCoreApplication.translate("Form", u"Scale Up-Down", None))
+        self.h_bounce_expression_lbl.setText(QCoreApplication.translate("Form", u"h_bounce_expression_lbl", None))
+        self.zigzag_btn.setText(QCoreApplication.translate("Form", u"ZigZag", None))
+        self.w_bounce_btn.setText(QCoreApplication.translate("Form", u"V Bounce", None))
+        self.cw_circle_btn.setText(QCoreApplication.translate("Form", u"CCW Circle", None))
+        self.drift_expression_lbl.setText(QCoreApplication.translate("Form", u"drift_expression_lbl", None))
+        self.wiggle_btn.setText(QCoreApplication.translate("Form", u"Wiggle", None))
+        self.CW_Ellipse_expression_lbl.setText(QCoreApplication.translate("Form", u"CW_Ellipse_expression_lbl", None))
+        self.drift_btn.setText(QCoreApplication.translate("Form", u"Drift", None))
+        self.CW_Circle_expression_lbl.setText(QCoreApplication.translate("Form", u"CW_Circle_expression_lbl", None))
+        self.heart_expression_lbl.setText(QCoreApplication.translate("Form", u"heart_expression_lbl", None))
+        self.blink_btn.setText(QCoreApplication.translate("Form", u"Blink", None))
+        self.blink_expression_lbl.setText(QCoreApplication.translate("Form", u"blink_expression_lbl", None))
+        self.Zigzag_expression_lbl.setText(QCoreApplication.translate("Form", u"Zigzag_expression_lbl", None))
+        self.wiggle_expression_lbl.setText(QCoreApplication.translate("Form", u"wiggle_expression_lbl", None))
+        self.CCW_Circle_expression_lbl.setText(QCoreApplication.translate("Form", u"CCW_Circle_expression_lbl", None))
+        self.ccw_circle_btn.setText(QCoreApplication.translate("Form", u"CW Circle", None))
+        self.pushButton.setText(QCoreApplication.translate("Form", u"For deep diving to expressions sea, please click!", None))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_7), QCoreApplication.translate("Form", u"Anim Expression", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Form", u"Expressions", None))
         self.groupBox_17.setTitle(QCoreApplication.translate("Form", u"Comp Info", None))
         self.label_34.setText(QCoreApplication.translate("Form", u"Node Count:", None))
@@ -2138,7 +2657,7 @@ class Ui_Form(object):
         self.label_69.setText(QCoreApplication.translate("Form", u"Nukepedia:", None))
         self.nukepedia_lbl.setText(QCoreApplication.translate("Form", u"nuke_pedia", None))
         self.label_58.setText(QCoreApplication.translate("Form", u"Special thanks:", None))
-        self.label_63.setText(QCoreApplication.translate("Form", u"www.cameroncarson.com (expressions)", None))
+        self.label_63.setText(QCoreApplication.translate("Form", u"www.cameroncarson.com (some expressions)", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_6), QCoreApplication.translate("Form", u"General Info", None))
         self.app_tuts.setText(QCoreApplication.translate("Form", u"?", None))
         self.refresh_btn.setText(QCoreApplication.translate("Form", u"Refresh", None))
