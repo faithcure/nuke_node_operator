@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'node_operator_dockablesmVbVn.ui'
+## Form generated from reading UI file 'node_operator_dockableTMtXiP.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -867,7 +867,7 @@ class Ui_Form(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 188, 1056))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 463, 1056))
         self.verticalLayout_48 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_48.setObjectName(u"verticalLayout_48")
         self.groupBox_3 = QGroupBox(self.scrollAreaWidgetContents_2)
@@ -1892,10 +1892,10 @@ class Ui_Form(object):
 
         self.verticalLayout_59.addWidget(self.line_26)
 
-        self.pushButton = QPushButton(self.tab_7)
-        self.pushButton.setObjectName(u"pushButton")
+        self.deep_dive_expression_btn = QPushButton(self.tab_7)
+        self.deep_dive_expression_btn.setObjectName(u"deep_dive_expression_btn")
 
-        self.verticalLayout_59.addWidget(self.pushButton)
+        self.verticalLayout_59.addWidget(self.deep_dive_expression_btn)
 
 
         self.verticalLayout_58.addLayout(self.verticalLayout_59)
@@ -2306,8 +2306,8 @@ class Ui_Form(object):
 
         self.retranslateUi(Form)
 
-        self.tabWidget.setCurrentIndex(3)
-        self.tabWidget_2.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget_2.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(Form)
@@ -2613,7 +2613,7 @@ class Ui_Form(object):
         self.wiggle_expression_lbl.setText(QCoreApplication.translate("Form", u"wiggle_expression_lbl", None))
         self.CCW_Circle_expression_lbl.setText(QCoreApplication.translate("Form", u"CCW_Circle_expression_lbl", None))
         self.ccw_circle_btn.setText(QCoreApplication.translate("Form", u"CW Circle", None))
-        self.pushButton.setText(QCoreApplication.translate("Form", u"For deep diving to expressions sea, please click!", None))
+        self.deep_dive_expression_btn.setText(QCoreApplication.translate("Form", u"For deep diving to expressions sea, please click!", None))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_7), QCoreApplication.translate("Form", u"Anim Expression", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Form", u"Expressions", None))
         self.groupBox_17.setTitle(QCoreApplication.translate("Form", u"Comp Info", None))
