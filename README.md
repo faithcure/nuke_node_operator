@@ -1,7 +1,7 @@
 # Node(s) Operator (Spread Sheet) for Nuke, *BETA*
 ___
 ### What does script to do:
-This python script allows you to quickly edit your node graph and set up your nodes (and node flow) at once nad much more.  If you want to use them just click it and avoid lost your time! 
+This python script allows you to quickly edit your node graph and set up your nodes (and node flow) at once and much more.  If you want to use them just click it and avoid lost your time! 
 <br>In short, avoid lost your time and work regularly.
 
 ### Node Operator [Spread Sheet] Specifications:
