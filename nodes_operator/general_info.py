@@ -116,7 +116,7 @@ class general_infos(QWidget, Ui_Form):
             nuke_env = "Indie"
         elif nuke.env["nukex"] == True:
             nuke_env = "NukeX"
-        elif nuke_env["hieroStudio"] == True:
+        elif nuke.env["hieroStudio"] == True:
             nuke_env = "Hiero Studio"
         elif nuke.env["hiero"] == True:
             nuke_env = "Hiero"
@@ -126,7 +126,7 @@ class general_infos(QWidget, Ui_Form):
             nuke_env = "Non Commercial"
         elif nuke.env["nukex"] == True:
             nuke_env = "NukeX"
-        elif nuke_env["studio"] == True:
+        elif nuke.env["studio"] == True:
             nuke_env = "Nuke Studio"
         else:
             nuke_env = "Unknow Environment"
