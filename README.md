@@ -74,5 +74,7 @@ ___
 
 HOW TO USE
 ---
-Video tutorial is coming soon.
+Tutorials on Youtube: https://www.youtube.com/watch?v=EaccWOZxJYA&t=204s
+
+Tutorial on personal site: http://www.fatihunal.net/tutorials/nodes_operator_for_nuke/ 
 
