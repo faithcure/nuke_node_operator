@@ -14,11 +14,11 @@ import read_node_tab
 import create_write_node
 import ready_expressions
 import general_info
-import importlib
-importlib.reload(read_node_tab)
-importlib.reload(create_write_node)
-importlib.reload(ready_expressions)
-importlib.reload(general_info)
+import imp
+imp.reload(read_node_tab)
+imp.reload(create_write_node)
+imp.reload(ready_expressions)
+imp.reload(general_info)
 
 class nodes_operator(QWidget, Ui_Form):
     def __init__(self):
